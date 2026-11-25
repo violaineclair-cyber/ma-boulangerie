@@ -1,0 +1,97 @@
+/* Fichier style.css : il décide de l'apparence de toutes les pages */
+
+/* Couleurs du site, définies une seule fois */
+:root {
+  --creme: #fdf6ec;
+  --brun: #6b3e1f;
+  --dore: #d9a441;
+  --texte: #2b2118;
+}
+
+/* Réglages généraux de la page */
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--creme);
+  color: var(--texte);
+  line-height: 1.6;
+}
+
+/* En-tête avec le nom et le menu */
+header {
+  background: var(--brun);
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+.logo {
+  margin: 0 0 8px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  display: inline-block;
+}
+nav a.actif {
+  border-bottom: 2px solid var(--dore);
+}
+
+/* Zone de contenu, centrée et pas trop large */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+h1, h2 {
+  color: var(--brun);
+}
+
+/* Grand bandeau de la page d'accueil */
+.banniere {
+  text-align: center;
+  padding: 32px 16px;
+  background: white;
+  border-radius: 8px;
+}
+.bouton {
+  display: inline-block;
+  background: var(--dore);
+  color: var(--texte);
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Cartes de la page produits */
+.carte {
+  background: white;
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin-bottom: 16px;
+}
+
+/* Grille de la galerie : les cases se rangent toutes seules */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.photo {
+  background: #e8d5b9;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 16px;
+  color: var(--brun);
+}
